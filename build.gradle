@@ -1,8 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext {
-        circleimage_version = "3.1.0"
-    }
+    ext.circleimage_version = "3.1.0"
 
     repositories {
         google()

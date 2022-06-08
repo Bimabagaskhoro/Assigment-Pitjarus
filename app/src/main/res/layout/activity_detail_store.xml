@@ -38,8 +38,8 @@
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_location_on" />
@@ -48,18 +48,21 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="TextView"
+                android:layout_marginStart="8dp"
+                android:text="@string/lokasi_belum_sesuai"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
+                android:backgroundTint="@android:color/holo_blue_light"
                 android:text="Button"
+                android:textSize="8sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView15"
                 app:layout_constraintStart_toEndOf="@+id/textView15"
                 app:layout_constraintTop_toTopOf="@+id/textView15" />
@@ -74,38 +77,45 @@
                 app:srcCompat="@drawable/ic_storefront" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/tv_store"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="TextView"
+                android:text="@string/toko_b"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageView7"
                 app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/tv_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="TextView"
-                app:layout_constraintStart_toStartOf="@+id/textView16"
-                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+                android:text="@string/jal_pal_merah_no_25_jakarta_pusat"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_store"
+                app:layout_constraintTop_toBottomOf="@+id/tv_store" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Tipe Outlet"
-                app:layout_constraintStart_toStartOf="@+id/textView17"
-                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                android:text="@string/tipe_outlet"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_location"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location" />
 
             <TextView
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Tipe Display"
+                android:text="@string/tipe_display"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView18"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -114,7 +124,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Sub Tipe Display"
+                android:text="@string/sub_tipe_display"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView19"
                 app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
@@ -123,7 +135,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="ERTM"
+                android:text="@string/ertm"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView20"
                 app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -132,7 +146,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Pareto"
+                android:text="@string/pareto"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView21"
                 app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -141,7 +157,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="E-merchandising"
+                android:text="@string/e_merchandising"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView23"
                 app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -155,58 +173,184 @@
                 app:srcCompat="@drawable/ic_snippet" />
 
             <TextView
+                android:id="@+id/tv_outlet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:text="@string/data"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/tv_sub_tipe_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                app:layout_constraintStart_toStartOf="@+id/tv_tipe_display"
+                app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/tv_tipe_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="@+id/tv_outlet"
+                app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+            <TextView
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="TextView"
-                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                android:text="@string/last_visit"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_store"
                 app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/tv_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="TextView"
+                android:text="@string/_05_09_2018"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView22"
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/tv_ertm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ya"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                app:layout_constraintStart_toStartOf="@+id/tv_sub_tipe_display"
+                app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/tv_pareto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ya"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                app:layout_constraintStart_toStartOf="@+id/tv_ertm"
+                app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/tv_merch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ya"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                app:layout_constraintStart_toStartOf="@+id/tv_pareto"
+                app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/tools"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_outlet"
+                app:layout_constraintEnd_toStartOf="@+id/tv_outlet"
+                app:layout_constraintTop_toTopOf="@+id/tv_outlet" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_tipe_display"
+                app:layout_constraintEnd_toEndOf="@+id/textView49"
+                app:layout_constraintTop_toTopOf="@+id/tv_tipe_display" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_sub_tipe_display"
+                app:layout_constraintEnd_toEndOf="@+id/textView50"
+                app:layout_constraintTop_toTopOf="@+id/tv_sub_tipe_display" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_ertm"
+                app:layout_constraintEnd_toEndOf="@+id/textView51"
+                app:layout_constraintTop_toTopOf="@+id/tv_ertm" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_pareto"
+                app:layout_constraintEnd_toEndOf="@+id/textView52"
+                app:layout_constraintTop_toTopOf="@+id/tv_pareto" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_merch"
+                app:layout_constraintEnd_toEndOf="@+id/textView53"
+                app:layout_constraintTop_toTopOf="@+id/tv_merch" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_no_visit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/no_visit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_visit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="32dp"
-        android:text="Button"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/visit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toTopOf="@+id/btn_no_visit" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
-        android:layout_marginEnd="130dp"
+        android:layout_marginEnd="150dp"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_location_on" />
+        app:srcCompat="@drawable/ic_baseline_navigation_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton4"
@@ -217,17 +361,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton3"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton3"
         app:layout_constraintTop_toTopOf="@+id/floatingActionButton3"
-        app:srcCompat="@drawable/ic_password" />
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="1dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton4"
         app:layout_constraintTop_toTopOf="@+id/floatingActionButton4"
-        app:srcCompat="@drawable/ic_person" />
+        app:srcCompat="@drawable/ic_baseline_my_location_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
